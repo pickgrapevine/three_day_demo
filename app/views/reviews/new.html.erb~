@@ -17,7 +17,31 @@
 				</div>
 				
 				
-				
+				<!--
+				<div class="contactUs collumn floatRight leftSpacer">
+                    <div class="contactBackground">
+                        <ul class="contactBackgroundSpacer">
+                            <li>
+                                <input class="contactInput required" type="text" name="store_name" id="store_name" value="Store Name"/>
+                            </li>
+                            <li>
+                                <input class="contactInput required email" type="text" name="email" id="email" value="Email Address"/>
+                            </li>
+                            <li>
+                                <input class="contactInput required" type="text" name="phone" id="phone" value="Phone Number"/>
+                            </li>
+                            <li>
+                                <textarea class="contactInput required" name="address" id="address" cols="28" rows="4">Street Address</textarea>
+                            </li>
+                            <li>
+                                <button class="sendMessage" id="sendMessage">Try it for FREE !!!</button>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+			</div>	
+			-->
 			
 			
 			<%= render 'form' %>

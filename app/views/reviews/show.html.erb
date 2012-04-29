@@ -1,24 +1,62 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Author:</b>
-  <%= @review.author %>
-</p>
-
-<p>
-  <b>Comment:</b>
-  <%= @review.comment %>
-</p>
-
-<p>
-  <b>Date:</b>
-  <%= @review.date %>
-</p>
-
-<p>
-  <b>Rating:</b>
-  <%= @review.rating %>
-</p>
 
 
-<%= link_to 'Back', reviews_path %>
+
+
+    <!--Body content-->
+    <div class="full-width-wrapper">
+    	<div class="fixed-width-wrapper" id="body-content">
+
+
+
+        	<!--Entry-->
+        	<div class="entry three-column fixed-width-wrapper">
+            	<!--block-->
+            	 <div class="price half">
+                    <span class="title">Latest Review Report</span>
+                    <div id="review_sample">
+  <p id="review_block"> <%= @review.comment %> <%= image_tag 'icon_testimonial_left.png', :id => "left_testimonial" %> <%= image_tag 'icon_testimonial_right.png', :id => "right_testimonial" %></p>
+  <div id="rating"><p id="rating_number">Rating: <%= @review.rating %></p></div>
+</div>
+                </div>
+                <!--/block-->
+
+            	<div class="price half">
+                    <div class="content">
+										<%= image_tag('reviewmap.png', :id => 'image_map_demo') %>
+                    </div>
+                </div>
+ 
+            </div>
+            <!--/Entry-->
+            
+			<!--Get in touch-->
+           
+            <!--
+            <div id="chart_div" style="width: 900px; height: 500px;"></div>
+            -->
+            <!--Get in touch-->
+            <div id="get-in-touch" class="fixed-width-wrapper">
+            	<div class="via-phone-number float-left">
+                	<a class="icon sprite float-left" title="Keep in touch with us">Keep in touch with us</a>
+                	<h2><strong>Questions? Email or call 888-888-8888</strong></h2>
+                    <span>For sign-up assistance, product questions &amp; more...</span>
+                </div>
+                <div class="via-email float-right">
+                	<form action="" method="post">
+                    	<div><input class="input-field border-radius-3px reset-text float-left" value="Enter your E-mail address..."></div>
+                        <div><button type="submit" class="black border-radius-3px float-right"><em class="sprite"></em>Contact</button></div>
+                    </form>
+                </div>
+            </div>
+            <!--/Get in touch-->
+            
+            
+            
+        </div>
+    </div>
+    <!--/Body content-->
+
+
+

@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+<div id="review_sample">
+  <%= @review.comment %>
+  <div id="rating"><%= @review.rating %></div>
+</div>
+
+
+
