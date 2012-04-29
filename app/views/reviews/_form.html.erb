@@ -1,0 +1,22 @@
+<%= form_tag("/reviews/create", :method => "post") do %>
+
+  <div class="field">
+    <%= label_tag 'review[name]' %><br />
+    <%= text_field_tag 'review[name]' %>
+  </div>
+  <div class="field">
+    <%= label_tag 'review[address]'%><br />
+    <%= text_field_tag 'review[address]' %>
+  </div>
+  <div class="field">
+    <%= label_tag 'review[lat]' %><br />
+    <%= text_field_tag 'review[lat]' %>
+  </div>
+  <div class="field">
+    <%= label_tag 'review[lng]' %><br />
+    <%= text_field_tag 'review[lng]' %>
+  </div>
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+<% end %>
