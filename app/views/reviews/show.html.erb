@@ -14,7 +14,7 @@
         	<div class="entry three-column fixed-width-wrapper">
             	<!--block-->
             	 <div class="price half">
-                    <span class="title">Latest Review Report</span>
+                    
                     <div id="review_sample">
   <p id="review_block"> <%= @review.comment %> <%= image_tag 'icon_testimonial_left.png', :id => "left_testimonial" %> <%= image_tag 'icon_testimonial_right.png', :id => "right_testimonial" %></p>
   <div id="rating"><p id="rating_number">Rating: <%= @review.rating %></p></div>
@@ -24,7 +24,8 @@
 
             	<div class="price half">
                     <div class="content">
-										<%= image_tag('reviewmap.png', :id => 'image_map_demo') %>
+										<%= image_tag('reviewmap.png', :id => 'map_img', :class => "img_frame") %>
+										<%= image_tag('slide_shadow.jpg' ) %>
                     </div>
                 </div>
  
