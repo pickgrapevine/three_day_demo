@@ -1,3 +1,4 @@
+require 'uri'
 require_relative '../../lib/yelp_search_api.rb'
 
 class ReviewsController < ApplicationController
@@ -44,13 +45,13 @@ class ReviewsController < ApplicationController
   # POST /reviews.json
   def create
 	  @info = params[:review]
-		@name = @info[:name]
-		@lat = @info[:lat]
-		@lng = @info[:lng]
-		@address = @info[:address]
-		@phone = @info[:phone]
-	  @email = @info[:email]
-    
+	  @name = URI.escape( @info[:name] )
+		@email = URI.escape(@info[:email])
+
+		@phone = URI.escape(@info[:phone])
+		@address = URI.escape(@info[:address])
+	
+	 
 		# parser =  YelpSearchParser.new 
 		results = search_for_yelp_id(@name, @address)
 		$stderr.puts results
