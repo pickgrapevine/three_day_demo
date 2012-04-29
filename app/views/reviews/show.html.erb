@@ -8,16 +8,18 @@
     <div class="full-width-wrapper">
     	<div class="fixed-width-wrapper" id="body-content">
 
-
-
+      
         	<!--Entry-->
         	<div class="entry three-column fixed-width-wrapper">
-            	<!--block-->
+            	
+							<!--block-->
             	 <div class="price half">
                     
                     <div id="review_sample">
   <p id="review_block"> <%= @review.comment %> <%= image_tag 'icon_testimonial_left.png', :id => "left_testimonial" %> <%= image_tag 'icon_testimonial_right.png', :id => "right_testimonial" %></p>
-  <div id="rating"><p id="rating_number">Rating: <%= @review.rating %></p></div>
+  
+          <%= image_tag 'yelp_logo_ratings.png', :id => "yelp_rating_thing" %>
+					<div><h2 id="author_comment">- Sally Johnson</h2></div>
 </div>
                 </div>
                 <!--/block-->
